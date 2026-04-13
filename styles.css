@@ -1,0 +1,79 @@
+/* reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* skip link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px 16px;
+    z-index: 1000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* just a few improvements */
+/* I cant resist */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.4rem;
+}
+
+.required {
+    color:red;
+}
+
+img {
+    max-width: 1200px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+form label {
+    margin-top: 16px;
+}
+
+form input {
+    height: 1.8rem;;
+}
+
+form select {
+    height: 1.8rem;;
+}
+
+form button {
+    cursor: pointer;
+    margin-top: 8px;
+    padding: 8px 12px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 400px;
+    margin-bottom: 16px;
+}
+
+

@@ -29,24 +29,8 @@
     content="Limitless Fitness Gym offers world-class personal training, group fitness classes, and flexible membership options to help you transform your life.">
   <meta name="twitter:image" content="https://srpires-asu.github.io/limitlessfitnessgym/images/facility.jpg">
 
-  <style>
-    /* Skip link - visually hidden until focused */
-    .skip-link {
-      position: absolute;
-      top: -40px;
-      left: 0;
-      background: #000;
-      color: #fff;
-      padding: 8px 16px;
-      z-index: 1000;
-      text-decoration: none;
-      font-weight: bold;
-    }
+  <link rel="stylesheet" href="styles.css">
 
-    .skip-link:focus {
-      top: 0;
-    }
-  </style>
 </head>
 
 <body>
@@ -153,45 +137,35 @@
         <p>Fill out the form below to kickstart your fitness journey:</p>
         <!--add accessibility to the form-->
         <form action="https://wp.zybooks.com/form-viewer.php" method="post" aria-describedby="form-desc">
-          <p id="form-desc">Fields marked with <abbr title="required">*</abbr> are required.</p>
+          <p id="form-desc">Fields marked with <span class="required">*</span> are required.</p>
 
           <fieldset>
             <legend>Your Contact Information</legend>
 
-            <div>
-              <label for="full-name">Full Name <abbr title="required">*</abbr></label>
-              <input type="text" id="full-name" name="full-name" autocomplete="name" aria-required="true" required>
-            </div>
+            <label for="full-name">Full Name <span class="required">*</span></label>
+            <input type="text" id="full-name" name="full-name" autocomplete="name" aria-required="true" required>
 
-            <div>
-              <label for="email">Email Address <abbr title="required">*</abbr></label>
-              <input type="email" id="email" name="email" autocomplete="email" aria-required="true" required>
-            </div>
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" aria-required="true" required>
 
-            <div>
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" autocomplete="tel">
-            </div>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel">
 
           </fieldset>
 
           <fieldset>
             <legend>Membership Preferences</legend>
 
-            <div>
-              <label for="membership-type">Membership Type</label>
-              <select id="membership-type" name="membership-type">
-                <option value="">Select a Membership Option</option>
-                <option value="monthly">Monthly Membership</option>
-                <option value="annual">Annual Membership</option>
-                <option value="family">Family &amp; Group Plans</option>
-              </select>
-            </div>
+            <label for="membership-type">Membership Type</label>
+            <select id="membership-type" name="membership-type">
+              <option value="">Select a Membership Option</option>
+              <option value="monthly">Monthly Membership</option>
+              <option value="annual">Annual Membership</option>
+              <option value="family">Family &amp; Group Plans</option>
+            </select>
 
-            <div>
-              <label for="fitness-goals">Tell us about your fitness goals:</label>
-              <textarea id="fitness-goals" name="fitness-goals"></textarea>
-            </div>
+            <label for="fitness-goals">Tell us about your fitness goals:</label>
+            <textarea id="fitness-goals" name="fitness-goals"></textarea>
 
           </fieldset>
 
